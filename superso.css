@@ -1,0 +1,177 @@
+	<script>
+
+	(function(f,b){if(!b.__SV){var e,g,i,h;window.mixpanel=b;b._i=[];b.init=function(e,f,c){function g(a,d){var b=d.split(".");2==b.length&&(a=a[b[0]],d=b[1]);a[d]=function(){a.push([d].concat(Array.prototype.slice.call(arguments,0)))}}var a=b;"undefined"!==typeof c?a=b[c]=[]:c="mixpanel";a.people=a.people||[];a.toString=function(a){var d="mixpanel";"mixpanel"!==c&&(d+="."+c);a||(d+=" (stub)");return d};a.people.toString=function(){return a.toString(1)+".people (stub)"};i="disable time_event track track_pageview track_links track_forms track_with_groups add_group set_group remove_group register register_once alias unregister identify name_tag set_config reset opt_in_tracking opt_out_tracking has_opted_in_tracking has_opted_out_tracking clear_opt_in_out_tracking start_batch_senders people.set people.set_once people.unset people.increment people.append people.union people.track_charge people.clear_charges people.delete_user people.remove".split(" ");
+	for(h=0;h<i.length;h++)g(a,i[h]);var j="set set_once union unset remove delete".split(" ");a.get_group=function(){function b(c){d[c]=function(){call2_args=arguments;call2=[c].concat(Array.prototype.slice.call(call2_args,0));a.push([e,call2])}}for(var d={},e=["get_group"].concat(Array.prototype.slice.call(arguments,0)),c=0;c<j.length;c++)b(j[c]);return d};b._i.push([e,f,c])};b.__SV=1.2;e=f.createElement("script");e.type="text/javascript";e.async=!0;e.src="undefined"!==typeof MIXPANEL_CUSTOM_LIB_URL?
+	MIXPANEL_CUSTOM_LIB_URL:"file:"===f.location.protocol&&"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//)?"https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js":"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js";g=f.getElementsByTagName("script")[0];g.parentNode.insertBefore(e,g)}})(document,window.mixpanel||[]);
+	mixpanel.init("7ba213102d7b06279c4ecff95d62d675", {batch_requests: true})</script>
+
+	<script>(mixpanel.track("Page visit"))</script>
+	<script>mixpanel.track_links('a', 'Link click', function(e) { return { url: e.href, text: e.innerText }} );
+
+	</script>
+
+	<nav class="nav">
+	  <a class="nav-link" href="/">Home</a> / 
+	  <a class="nav-link" href="/portfolio">Portfolio</a> / 
+	  <a class="nav-link" href="/about-us">About Us</a> /
+	  <a class="nav-link" href="/blog">Blog</a> /
+	  <a class="nav-link" href="/contact">Contact</a>
+	</nav>
+
+	<style>
+
+	/* Navbar */
+	.nav {
+	  background: rgba(255,255,255,255,0.7);
+	  backdrop-filter: blur(30px);
+	  color: #808c99 !important;
+	  align-items: center;
+	  padding-left: 5%;
+	  position: fixed;
+	  z-index: 9999;
+	  display: flex;
+	  height: 64px;
+	  width: 100%;
+	}
+
+	.nav-link {
+	  transition: all .3s ease-in-out;
+	  justify-content: center;
+	  align-items: center;
+	  padding: 0 20px 4px;
+	  font-size: 14px;
+	  display: flex;
+	  height: 100%;
+	  color: #4a4a4a;
+	}
+
+	.nav-link:hover {
+	  color: #121111 !important;
+	}
+
+	.notion-navbar {
+  display: none !important;
+	}
+	a {
+			text-decoration: none !important;
+		}
+
+	/* Callout Buttons */
+		.notion-callout {
+			border-radius: 100px !important;
+			position: relative !important;
+			padding: 16px 24px !important;
+			border: none !important;
+		}
+		
+		.notion-callout.bg-purple-light {
+			box-shadow: 0 10px 20px -10px #516Bbef !important;
+			background: #516bef !important;
+		}
+	  
+		.notion-callout.bg-yellow-light {
+			box-shadow: 0 10px 20px -10px #f0bd66 !important;
+			background: #f0bd66 !important;
+		}
+	  
+		.notion-callout.bg-blue-light {
+			box-shadow: 0 10px 20px -10px #1ea1f1 !important;
+			background: #1ea1f1 !important;
+		}
+
+		.notion-callout a {
+			letter-spacing: -0.5px !important;
+			padding: 0 0 2px 66px !important;
+			align-items: center !important;
+			position: absolute !important;
+			font-weight: 600 !important;
+			display: flex !important;
+			border: none !important;
+			color: #fff !important;
+			bottom: 0 !important;
+			right: 0 !important;
+			left: 0 !important;
+			top: 0 !important;
+		}
+		
+	/* --- Remove bottom page padding and adjust page padding for smaller screens --- */
+	.super-content {
+
+	  padding-bottom: 40px !important;
+	}
+
+	/* Spacing between gallery items */
+	    .notion-collection-gallery {
+	        grid-gap: 40px !important;
+	    }
+
+	    /* Transition for gallery cards */
+	    .notion-collection-card {
+	        transition: var(--transition) !important;
+	    }
+
+	    /* Gallery cards hover effect */
+	    .notion-collection-card:hover {
+	        transform: scale(1.02) !important;
+	    }
+
+	    /* Gallery cards click effect */
+	    .notion-collection-card:active {
+	        transform: scale(1) !important;
+	    }
+
+	    /* Gallery cards title styles */
+	    .notion-collection-card .notion-property__title {
+	        padding: 20px !important;
+	    }
+
+	    /* Gellery card cover height */
+	    .notion-collection-card__cover,
+	    .notion-collection-card__cover div,
+	    .notion-collection-card__cover img {
+	        max-height: 280px !important;
+	        height: 280px !important;
+	    }
+
+
+	/* Transforms first unordered list into a horizontal link bar */
+
+	/*
+
+	article#block-b146fb5af6a347cba4ab4331d7efbefc ul:first-child {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	}
+
+	article#block-b146fb5af6a347cba4ab4331d7efbefc ul:first-child li {
+	float:left
+	}
+
+	article#block-b146fb5af6a347cba4ab4331d7efbefc ul:first-child li a {
+	  display: block;
+	    text-align: center;
+	    padding: 15px 15px;
+	    text-decoration: none;
+	}
+
+	*/
+
+	/* Hide links to pages */
+	   /*  a[href="/about-us"] {
+	    display: none !important;
+	    }
+	      a[href="/contact"] {
+	    display: none !important;
+	    }
+
+	      a[href="/blog"] {
+	    display: none !important;
+	    }
+	    a[href="/portfolio"] {
+	    display: none !important;
+	    } */
+
+	</style>
+
