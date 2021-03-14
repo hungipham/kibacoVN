@@ -1,6 +1,7 @@
 	.nav {
 	  background: rgba(255,255,255,255,0.7);
 	  backdrop-filter: blur(30px);
+	  -webkit-backdrop-filter:blur(30px);
 	  color: #808c99 !important;
 	  align-items: center;
 	  padding-left: 5%;
