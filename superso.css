@@ -81,7 +81,7 @@
 
 	/* Spacing between gallery items */
 	    .notion-collection-gallery {
-	        grid-gap: 40px !important;
+	        grid-gap: 25px !important;
 	    }
 
 	    /* Transition for gallery cards */
@@ -91,7 +91,7 @@
 
 	    /* Gallery cards hover effect */
 	    .notion-collection-card:hover {
-	        transform: scale(1.02) !important;
+	        transform: scale(1.05) !important;
 	    }
 
 	    /* Gallery cards click effect */
