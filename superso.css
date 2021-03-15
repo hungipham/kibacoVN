@@ -112,6 +112,13 @@
 	        height: 280px !important;
 	    }
 
+	/* Change font of Portfolio page descriptions */
+
+	.notion-header__description {
+		font-size:16px !important;
+	}
+
+
 
 	/* Transforms first unordered list into a horizontal link bar */
 
