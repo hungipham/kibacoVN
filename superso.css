@@ -1,7 +1,3 @@
-	:root {
-	--transition: all .2s ease-in-out !important;
-};
-
 	.nav {
 	  background: rgba(255,255,255,255,0.7);
 	  backdrop-filter: blur(50px);
