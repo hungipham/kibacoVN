@@ -79,6 +79,10 @@
 	  padding-bottom: 40px !important;
 	}
 
+/*-------------------------------------------*/
+/*---------------- GALLERY ------------------*/
+/*-------------------------------------------*/
+
 	/* Spacing between gallery items */
 	    .notion-collection-gallery {
 	        grid-gap: 25px !important;
@@ -91,12 +95,12 @@
 
 	    /* Gallery cards hover effect */
 	    .notion-collection-card:hover {
-	        transform: scale(1.05) .12s ease-in !important;
+	        transform: scale(1.05) ease-in !important;
 	    }
 
 	    /* Gallery cards click effect */
 	    .notion-collection-card:active {
-	        transform: scale(1) .12s ease-in-out !important;
+	        transform: scale(1) ease-in-out !important;
 	    }
 
 	    /* Gallery cards title styles */
