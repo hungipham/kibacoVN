@@ -1,8 +1,8 @@
 	.nav {
 	  background: rgba(255,255,255,255,0.7);
-	  backdrop-filter: blur(50px);
-	  -webkit-backdrop-filter:blur(50px);
-	  color: #808c99 !important;
+	  backdrop-filter: blur(30px);
+	  -webkit-backdrop-filter:blur(30px);
+	  color: #ffffff !important;
 	  align-items: center;
 	  padding-left: 5%;
 	  position: fixed;
@@ -21,11 +21,11 @@
 	  font-size: 14px;
 	  display: flex;
 	  height: 100%;
-	  color: #4a4a4a;
+	  color: #121111;
 	}
 
 	.nav-link:hover {
-	  color: #121111 !important;
+	  color: #e6e6e6 !important;
 	}
 
 	.notion-navbar {
